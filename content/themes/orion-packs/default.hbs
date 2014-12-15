@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="keywords" content="Ski Backpack, Snowboard Backpack, Side Country Backpack, Back Country Backpack, Snowboard Pack, Ski Pack, New Ski Pack, New Snowboard Pack, Orion Packs, Orion Backpack, REI Ski Packs, REI Snowboard Packs, Ski Transport, Board Transport" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/styles.css"}}" />
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
+
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+
+    <header id="header">
+        <nav id="nav">
+            <div class="content">
+                <ul>
+                    {{#if @blog.logo}}
+                        <li>
+                            <a href="{{@blog.url}}">
+                                <img src="{{@blog.logo}}" alt="Logo" />
+                            </a>
+                        </li>
+                    {{/if}}
+                    <li>
+                        <a href="{{@blog.url}}">Home</a>
+                    </li>
+                    <li>
+                        <a href="{{@blog.url}}/products">Products</a>
+                    </li>
+                    <li>
+                        <a href="{{@blog.url}}/athletes">Athletes</a>
+                    </li>
+                    <li>
+                        <a href="{{@blog.url}}/store-finder">Store Finder</a>
+                    </li>
+                    <li>
+                        <a href="{{@blog.url}}/how-to-load">How To Load</a>
+                    </li>
+                    <li>
+                        <a href="{{@blog.url}}/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="app">
+        {{{body}}}
+        
+        <footer id="footer">
+            <div class="content">
+                <div class="clearfix">
+                    <div class="col col-3">
+                        <h3 class="text-center">About Us</h3>
+
+                        <ul>
+                            <li>
+                                <a href="#">Story</a>
+                            </li>
+                            <li>
+                                <a href="#">Athletes</a>
+                            </li>
+                            <li>
+                                <a href="#">Friends</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-3">
+                        <h3 class="text-center">Products</h3>
+
+                        <ul>
+                            <li>
+                                <a href="#">Men's Archer</a>
+                            </li>
+                            <li>
+                                <a href="#">Men's Method</a>
+                            </li>
+                            <li>
+                                <a href="#">Women's Archer</a>
+                            </li>
+                            <li>
+                                <a href="#">Women's Method</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-3">
+                        <h3 class="text-center">Stores</h3>
+
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    SEATTLE REI
+                                    Latitude:47.620061°
+                                    Longitude:-122.329667°
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Denver REI
+                                    Latitude:39.749493°
+                                    Longitude:-104.994594°
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    SLC REI
+                                    Latitude:40.704415°
+                                    Longitude:-111.814309°
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Anchorage REI
+                                    Latitude:61.189997°
+                                    Longitude:-149.893849°
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col col-3">
+                        <h3 class="text-center">Contact</h3>
+
+                        <ul>
+                            <li>
+                                <a href="#">General Info</a>
+                            </li>
+                            <li>
+                                <a href="#">Warranty</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <center class="copyright">&copy; {{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a> / All Rights Reserved</center>
+            </div>
+        </footer>
+    </section>
+
+    {{ghost_foot}}
+
+    <script type="text/javascript" src="{{asset "js/actions.js"}}"></script>
+
+</body>
+</html>

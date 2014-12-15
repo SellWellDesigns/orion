@@ -1,0 +1,273 @@
+/**
+ |------------------------------------------------------------------------------------------------------
+ | Layout
+ |------------------------------------------------------------------------------------------------------
+ */
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+header#header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	height: 75px;
+	line-height: 75px;
+	background-color: #fff;
+}
+
+nav#nav {
+	height: 100%;
+	background: rgba(255, 255, 255, 0.4);
+	box-shadow: 1px 3px 7px rgba(0, 0, 0, .2);
+}
+nav#nav ul {
+	list-style-type: none;
+	margin: 0;
+}
+nav#nav ul li {
+	display: inline-block;
+	height: 100%;
+}
+nav#nav ul li a {
+	display: block;
+}
+
+section#app {
+	position: absolute;
+	top: 75px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	overflow: auto;
+	background-color: #202020;
+}
+
+footer#footer {
+	background-color: #202020;
+	color: #fff;
+	padding: 20px 0;
+}
+
+.page-content {
+	background-color: #fff;
+	padding: 20px 0;
+}
+
+
+
+
+
+/**
+ |------------------------------------------------------------------------------------------------------
+ | Typography
+ |------------------------------------------------------------------------------------------------------
+ */
+html, body {
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	line-height: 1.5em;
+	color: #333;
+}
+
+h1 {
+	
+}
+h2 {
+	
+}
+h3 {
+	
+}
+h4 {
+	
+}
+h5 {
+	
+}
+h6 {
+	
+}
+
+p {
+
+}
+
+a {
+	color: #13A2FD;
+}
+
+
+
+
+
+
+
+/**
+ |------------------------------------------------------------------------------------------------------
+ | Forms
+ |------------------------------------------------------------------------------------------------------
+ */
+fieldset {
+	border: none;
+	outline: none;
+}
+legend {
+
+}
+input, textarea {
+	width: 100%;
+	padding: 7px;
+	border: 1px solid #eee;
+	outline: none;
+	margin: 4px 0;
+}
+input:focus, textarea:focus {
+	border: 1px solid #ccc;
+	outline: none;
+}
+
+
+
+
+
+
+
+/**
+ |------------------------------------------------------------------------------------------------------
+ | Helpers
+ |------------------------------------------------------------------------------------------------------
+ */
+.content {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.col {
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+.col-1 {
+	
+}
+.col-2 {
+	
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	
+}
+.col-5 {
+	
+}
+.col-6 {
+	
+}
+.col-7 {
+	
+}
+.col-8 {
+	
+}
+.col-9 {
+	
+}
+.col-10 {
+	
+}
+.col-11 {
+	
+}
+.col-12 {
+	
+}
+
+
+
+
+
+
+
+/**
+ |------------------------------------------------------------------------------------------------------
+ | Tabs
+ |------------------------------------------------------------------------------------------------------
+ */
+.tab-nav ul {
+	list-style-type: none;
+}
+.tab-nav ul li {
+	display: inline-block;
+}
+.tab-nav ul li a {
+	display: block;
+	text-decoration: none;
+	padding: 0 10px;
+}
+
+.tabs section {
+	display: none;
+}
+.tabs section.active {
+	display: block;
+}
+
+
+
+
+
+
+
+/**
+ |------------------------------------------------------------------------------------------------------
+ | Home Page
+ |------------------------------------------------------------------------------------------------------
+ */
+.marketing-header {
+	background-color: #fff;
+}
+.marketing-header h1 {
+	margin: 0;
+}
+.marketing-header p.lead {
+	margin: 0;
+}
+
+.about-us {
+	padding: 20px 0;
+	background-color: #fff;
+}
+
+.product-previews {
+	background-color: #eee;
+	padding: 20px 0;
+}
+
+.blog-roll {
+	padding: 20px 0;
+	background-color: #fff;
+}
