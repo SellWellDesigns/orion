@@ -37,6 +37,16 @@ nav#nav ul li {
 }
 nav#nav ul li a {
 	display: block;
+	text-decoration: none;
+	color: #333;
+	padding: 0 10px;
+}
+nav#nav ul li a:hover {
+	color: #000;
+}
+nav#nav .logo {
+	float: left;
+	margin-right: 10px;
 }
 
 section#app {
@@ -54,6 +64,22 @@ footer#footer {
 	background-color: #202020;
 	color: #fff;
 	padding: 20px 0;
+}
+footer#footer ul {
+	list-style-type: none;
+}
+footer#footer ul a {
+	text-decoration: none;
+	display: block;
+	color: #fff;
+}
+footer#footer .copyright {
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #333;
+}
+footer#footer .copyright a {
+	color: #fff;
 }
 
 .page-content, .post-content {
@@ -108,7 +134,14 @@ a {
 	color: #13A2FD;
 }
 
-
+button {
+	background: #333;
+	padding: 7px 10px;
+	border: none;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+}
 
 
 
@@ -129,12 +162,12 @@ legend {
 input, textarea {
 	width: 100%;
 	padding: 7px;
-	border: 1px solid #eee;
+	border: 1px solid #ddd;
 	outline: none;
 	margin: 4px 0;
 }
 input:focus, textarea:focus {
-	border: 1px solid #ccc;
+	border: 1px solid #bbb;
 	outline: none;
 }
 
@@ -227,6 +260,13 @@ input:focus, textarea:focus {
 	display: block;
 	text-decoration: none;
 	padding: 0 10px;
+	border: 1px solid #ccc;
+	color: #333;
+}
+.tab-nav ul li a:hover, .tab-nav ul li a.active {
+	background: #333;
+	border-color: #333;
+	color: #fff;
 }
 
 .tabs section {

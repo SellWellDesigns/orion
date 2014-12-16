@@ -1,0 +1,127 @@
+{{!< default}}
+
+
+<header class="marketing-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+    <div class="overlay">
+        <div class="content">
+            <center>
+                <h1>{{@blog.title}}</h1>
+                <p class="lead">{{@blog.description}}</p>
+            </center>
+        </div>
+    </div>
+</header>
+
+
+<section id="aboutUs" class="about-us">
+    <div class="content">
+        <h1 class="text-center">About Us</h1>
+        
+        <p>Named after the constellation, Orion Packs, hopes to live up to its famous namesake. The Orion is one of the most recognizable constellations in the night sky and can been seen from anywhere on earth. The name is fitting for our bag design since it is a hunter in Greek mythology- The Orion Pack is reminiscent of a quiver to carry arrows.</p>
+
+        <p>Orion Packs was conceptualized when we were boarding the backcountry and realized that carrying our board was cumbersome and taxing. We searched high and low for a bag that could make this task easier and when we found none we started designing our own.</p>
+
+        <p>Orion Packs will bring you closer to nature by fulfilling the need to carry your skis or board more comfortably and easily. Now you can hike further and explore new terrain, get closer to nature, and find your happy place on a slope of powder.</p>
+    </div>
+</section>
+
+
+<section class="product-previews">
+    <div class="content">
+        <h1 class="text-center">Products</h1>
+
+        <nav class="tab-nav">
+            <center>
+                <ul>
+                    <li>
+                        <a href="#" data-tab="mensArcher" class="active">Men's Archer</a>
+                    </li>
+                    <li>
+                        <a href="#" data-tab="mensMethod">Men's Method</a>
+                    </li>
+                    <li>
+                        <a href="#" data-tab="womensArcher">Women's Archer</a>
+                    </li>
+                    <li>
+                        <a href="#" data-tab="womensMethod">Women's Method</a>
+                    </li>
+                </ul>
+            </center>
+        </nav>
+
+        <section class="tabs">
+            <section id="mensArcher" class="tab mens-archer active">
+                <p>Purpose built, durable and lightweight the  Men’s Archer ski pack is designed to carry your sticks easily, efficiently and effectively across your back while trekking, hiking or walking.</p>
+                
+                <p>The Men’s Archer comes in three different sizes to create a better fit for everyone.</p>
+                
+                <p>Removable attachment with storage for shovel blade, handle, probe, a layer and hydration bladder (sold separately).
+                Zippered hip belt pockets for easy storage and quick access.
+                Polyethylene insert and high density foam provide a protective value and structural integrity to support awkward loads.
+                Skis are under the storage to bring the center of gravity closer to your body, increasing your balance.
+                Contoured design and six points of adjustment for a comfortable fit.
+                Easy loading 3 point strapping system secures ski’s comfortably across your back totally clear of your head and legs.
+                Monobody design optimizes the torso, form fitting the wearer with a pack designed to carry skis comfortably and with total stability.</p>
+            </section>
+
+            <section id="mensMethod" class="tab mens-method">
+                <p>The Men’s Method snowboard pack was designed to get your further out into the backcountry by giving you a purpose built bag to carry your board. Never has hiking with a board been so easy- you might just find yourself trekking to new mountains.
+ 
+                The Men’s Method comes in three different sizes to create a better fit for everyone.
+                Easy loading flap system stabilizes your snowboard across your back totally clear of your head and legs
+                 
+                Monobody design optimizes the torso form fitting the wearer with a pack designed to carry a snowboard comfortably and with total stability.
+                 
+                Men’s Method features a contoured design and a 6 point adjustment for a comfortable fit carrying your snowboard or when dominating terrain.
+                 
+                Storage for  shovel blade, handle, probe, a layer and hydration bladder (sold separately).
+                 
+                Polyurethane insert coupled with the use of high density foam provide a protective value and structural integrity to support awkward loads.
+                 
+                Rear paneling channels airflow keeping the wearer cool while providing additional protection against the elements.
+                 
+                Deep, easy to reach zippered hip belt pockets, rear pockets and side pouch for storage of important items.</p>
+            </section>
+            
+            <section id="womensArcher" class="tab womens-archer">
+                <p>Purpose built, durable and lightweight the  woman’s Archer ski pack is designed to carry skis easily, efficiently and effectively across your back while trekking, hiking or walking.
+                The Woman’s Archer comes in two different sizes to create a better fit for everyone.
+                Removable attachment with storage for shovel blade, handle, probe, a layer and hydration bladder (sold separately).
+                Zippered hip belt pockets for easy storage and quick access.
+                Polyurethane insert and high density foam provide a protective value and structural integrity to support awkward loads.
+                Skis are under the storage to bring the center of gravity closer to your body, increasing your balance.
+                Contoured design and six points of adjustment for a comfortable fit.
+                Easy loading 3 point strapping system secures ski’s comfortably across your back totally clear of your head and legs.
+                Monobody design optimizes the torso, form fitting the wearer with a pack designed to carry skis comfortably and with total stability.</p>
+            </section>
+
+            <section id="womensMethod" class="tab womens-method">
+                <p>The Woman’s Method snowboard pack was designed specifically for a woman’s body with the purpose of getting you and your board to new mountains. Never has hiking with a board been so easy and comfortable.
+ 
+                The Woman’s Method comes in two different sizes to create a better fit for everyone.
+                Easy loading flap system stabilizes your snowboard across your back totally clear of your head and legs
+                 
+                Monobody design optimizes the torso form fitting the wearer with a pack designed to carry a snowboard comfortably and with total stability.
+                 
+                Woman’s Method features a contoured design and a 6 point adjustment for a comfortable fit carrying your snowboard or when dominating terrain.
+                 
+                Storage for  shovel blade, handle, probe, a layer and hydration bladder (sold separately).
+                 
+                Polyurethane insert coupled with the use of high density foam provide a protective value and structural integrity to support awkward loads.
+                 
+                Rear paneling channels airflow keeping the wearer cool while providing additional protection against the elements.
+                 
+                Deep, easy to reach zippered hip belt pockets, rear pockets and side pouch for storage of important items.</p>
+            </section>
+        </section>
+    </div>
+</section>
+
+
+<section id="blogRoll" class="blog-roll" role="main">
+    <div class="content">
+        <h1 class="text-center">News</h1>
+
+        {{> "loop"}}
+    </div>
+</section>

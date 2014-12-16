@@ -23,17 +23,14 @@
     <header id="header">
         <nav id="nav">
             <div class="content">
+                {{#if @blog.logo}}
+                    <div class="logo">
+                        <a href="{{@blog.url}}">
+                            <img src="{{@blog.logo}}" alt="Logo" />
+                        </a>
+                    </div>
+                {{/if}}
                 <ul>
-                    {{#if @blog.logo}}
-                        <li>
-                            <a href="{{@blog.url}}">
-                                <img src="{{@blog.logo}}" alt="Logo" />
-                            </a>
-                        </li>
-                    {{/if}}
-                    <li>
-                        <a href="{{@blog.url}}">Home</a>
-                    </li>
                     <li>
                         <a href="{{@blog.url}}/products">Products</a>
                     </li>
@@ -65,13 +62,10 @@
 
                         <ul>
                             <li>
-                                <a href="#">Story</a>
+                                <a href="{{@blog.url}}/#aboutUs">Story</a>
                             </li>
                             <li>
-                                <a href="#">Athletes</a>
-                            </li>
-                            <li>
-                                <a href="#">Friends</a>
+                                <a href="{{@blog.url}}/athletes">Athletes</a>
                             </li>
                         </ul>
                     </div>
@@ -80,16 +74,16 @@
 
                         <ul>
                             <li>
-                                <a href="#">Men's Archer</a>
+                                <a href="{{@blog.url}}/mens-archer">Men's Archer</a>
                             </li>
                             <li>
-                                <a href="#">Men's Method</a>
+                                <a href="{{@blog.url}}/mens-method">Men's Method</a>
                             </li>
                             <li>
-                                <a href="#">Women's Archer</a>
+                                <a href="{{@blog.url}}/womens-archer">Women's Archer</a>
                             </li>
                             <li>
-                                <a href="#">Women's Method</a>
+                                <a href="{{@blog.url}}/womens-method">Women's Method</a>
                             </li>
                         </ul>
                     </div>
